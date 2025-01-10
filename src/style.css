@@ -147,13 +147,13 @@ p,li,a{
 
 .navbar ul{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .navbar ul li{
     border: 1px solid var(--para-color);
     border-radius: 50px;
-    padding: 4px 12px;
-    text-align: center;
+    padding: 6px 5px 0 5px;
+    /* text-align: center; */
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -177,15 +177,33 @@ p,li,a{
     
 }
 .navbar ul li a{
+    padding: 8px 8px;
     color: var(--heading-color);
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     position: relative;
     z-index: 9;
+    text-align: center;
 }
 .navbar ul li:hover a{
     color: var(--bg-color);
 }
+
+
+.navbar ul li:last-child a i{
+    border: 1px solid var(--para-color);
+    border-radius: 4px;
+    background-color: var(--bg2-color);
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    
+    & i{
+    }
+}
+
 
