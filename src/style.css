@@ -54,6 +54,13 @@ p,li,a{
     padding: 9.6rem 2.4rem;
 }
 
+.grid{
+    display: grid;   
+}
+
+.grid-two--cols{
+    grid-template-columns: repeat(2,1fr);
+}
 /* header */
 .section-navbar{
     width: 100%;
@@ -245,4 +252,33 @@ nav ul:last-child::after {
 .navbar ul li a:focus {
     outline: 2px dashed var(--para-color);
     outline-offset: 4px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    background-color: #2172f4;
+    color: var(--bg-color);
+    border-radius: .6rem;
+    -webkit-border-radius:  .6rem ;
+    -moz-border-radius:  .6rem ;
+    -ms-border-radius:  .6rem ;
+    -o-border-radius:  .6rem ;
+}
+
+.btn:hover{
+    background-color: #055ff0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main {
+    background-image: linear-gradient(
+        to top right,
+        #3d86fa,
+        #4484fb,
+        #679eff,
+        #b3d2ff,
+        #ebf3fe
+    );
+    display: flex;
 }
