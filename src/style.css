@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital@0;1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 *{
     margin: 0;
@@ -34,6 +36,7 @@ p,li,a{
     text-decoration: none;
     list-style: none;
     cursor: pointer;
+    
 }
 
 /* theme */
@@ -272,6 +275,7 @@ nav ul:last-child::after {
 }
 
 main {
+    position: relative;
     background-image: linear-gradient(
         to top right,
         #3d86fa,
@@ -280,5 +284,69 @@ main {
         #b3d2ff,
         #ebf3fe
     );
-    display: flex;
+    
+}
+
+.section-main .container{
+    /* border: 2px solid; */
+    width: 82%;
+}
+
+.section-main .grid{
+    align-items: center;
+    gap: 2.4rem;
+    
+    & .main-subheading{
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 1.1rem;
+        word-spacing: 0.1rem;
+        font-weight: 700;
+        color: rgb(60, 60, 189);
+    }
+
+    & .main-heading{
+        font-size: 3.5rem;
+        font-family: "Jost";
+        color: rgb(22, 22, 145);
+        font-weight: 700;
+    }
+
+    & .main-para{
+        color: var(--bg-color);
+        margin: 1rem 0 2.5rem 0;
+        line-height: 1.2rem;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
+
+
+.section-main-image figure img{
+    width: 100%;
+    height: auto;
+        
+}
+
+/* main page bottom wave design */
+.custom-shape-divider-bottom-1736595373 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1736595373 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1736595373 .shape-fill {
+    fill: white;
 }
