@@ -1,0 +1,64 @@
+[
+    {
+     "id": 1,
+     "name": "Smartphone",
+     "category": "Phones",
+     "brand": "OnePlus",
+     "price": 20000,
+     "stock": 500,
+     "description" : "Smartphone with all the latest features and technology like bluetooth v5.3, fast charging ,5G connectivity and powerful processor.",
+     "image" : "../public/phone2.png"
+    },
+    {
+     "id": 2,
+     "name": "Laptop",
+     "category": "Laptop",
+     "brand": "Dell",
+     "price": 40000,
+     "stock": 250,
+     "description" : "Laptop with all the latest features and technology like gen-4 SSD storage, DDR4 ram ,wifi 5 and powerful intel processor.",
+     "image" : "../public/leptop.png"
+    },
+    {
+     "id": 3,
+     "name": "Speakers",
+     "category": "speaker",
+     "brand": "Zebronics",
+     "price": 10000,
+     "stock": 5000,
+     "description" : "Speakers with powerful bass, clear and loud sound, perfect treble which suits all the music lovers. Provides multiple connectivity like aux , bluetooth etc.",
+     "image" : "../public/speakers.jpg"
+    },
+    {
+     "id": 4,
+     "name": "Earphone",
+     "category": "Earphones",
+     "brand": "Boat",
+     "price": 500,
+     "stock": 7500,
+     "description" : "Wired earphone with good and clear sound , aux connectivity and strong braided wire which makes it a plug and play earphones.",
+     "image" : "../public/earphones.jpg"
+    },
+    {
+     "id": 5,
+     "name": "Ps5",
+     "category": "Ps5",
+     "brand": "Sony",
+     "price": 45000,
+     "stock": 100,
+     "description" : "Powerful beast for ultimate game lovers, just plug it with a good quality display and enjoy all the high graphic games in best quality and performance.",
+     "image" : "../public/ps5.jpg"
+    },
+    {
+     "id": 6,
+     "name": "Headphone",
+     "category": "HeadPhones",
+     "brand": "Rockz",
+     "price": 2000,
+     "stock": 250,
+     "description" : "Wireless headphones which gives you rocking bass, thrilling treble, and good quality audio. Can be used through wired connection also and wirelessly with 20 Hrs battery backup. ",
+     "image" : "../public/headphone.png"
+    }
+
+    
+]
