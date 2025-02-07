@@ -26,7 +26,7 @@
      "brand": "Zebronics",
      "price": 10000,
      "stock": 5000,
-     "description" : "Speakers with powerful bass, clear and loud sound, perfect treble which suits all the music lovers. Provides multiple connectivity like aux , bluetooth etc.",
+     "description" : "Powerful bass, clear and loud sound, perfect treble which suits all the music lovers. Provides multiple connectivity like aux , bluetooth etc.",
      "image" : "../public/speakers.jpg"
     },
     {
@@ -46,7 +46,7 @@
      "brand": "Sony",
      "price": 45000,
      "stock": 100,
-     "description" : "Powerful beast for ultimate game lovers, just plug it with a good quality display and enjoy all the high graphic games in best quality and performance.",
+     "description" : "Beast for ultimate game lovers, just plug with good quality display and enjoy all the games in best quality and performance.",
      "image" : "../public/ps5.jpg"
     },
     {
@@ -56,7 +56,7 @@
      "brand": "Rockz",
      "price": 2000,
      "stock": 250,
-     "description" : "Wireless headphones which gives you rocking bass, thrilling treble, and good quality audio. Can be used through wired connection also and wirelessly with 20 Hrs battery backup. ",
+     "description" : "Rocking bass, thrilling treble, and good quality audio. Can be used through wired connection also and wirelessly with 20 Hrs battery backup. ",
      "image" : "../public/headphone.png"
     }
 

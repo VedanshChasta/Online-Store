@@ -1,3 +1,6 @@
+import { addToCart } from "./addToCart";
+import { homeQuantityToggle } from "./homeQuantityToggle";
+
 const productContainer = document.querySelector('#productContainer');
 const productTemplate = document.querySelector('#productTemplate');
 
@@ -22,6 +25,24 @@ export const showProductContainer = (products) => {
         productClone.querySelector(".productDescription").textContent = description;
         productClone.querySelector(".currentPrice").textContent = `₹${price}`;
         productClone.querySelector(".actualPrice").textContent = `₹${price * 4}`;
+
+        //Giving unique identity to each card 
+        productClone.querySelector("#cardvalue").setAttribute("id", `card${id}`);
+
+        productClone
+        .querySelector(".stockElement")
+        .addEventListener("click", (event) => {
+            homeQuantityToggle(event,id,stock);
+        });
+
+        productClone
+        .querySelector(".add-to-cart-btn")
+        .addEventListener("click", (event) => {
+            addToCart(event,id,stock);
+        });
+
+        
+
 
 
         productContainer.append(productClone);
