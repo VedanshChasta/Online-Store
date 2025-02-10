@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Store-Cart</title>
+</head>
+
+<body>
+  <header class="section-navbar">
+    <section class="top_txt">
+      <div class="head container">
+        <div class="head_txt">
+          <p>Free shipping, 15-days return and 7-days Replacement. </p>
+        </div>
+        <div class="sign-in-up">
+          <a href="#">sign in</a>
+          <a href="#">sign up</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="container">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <span>online</span>
+            <span>store</span>
+          </a>
+        </div>
+  
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+          </ul>
+  
+          <ul>
+            <div class="cart">
+              <a href="/cart.html" class="nav-link addtocart" id="cartValue">
+                <i class="fa-solid fa-cart-shopping"> 0 </i>
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!------------------------------------- AddToCart Elemrnt section start ------------------------------>
+
+    <section class="AddToCartElement">
+        <div class="container">
+            <section>
+                <div id="productCartContainer">
+                    
+              
+                </div>
+            </section>
+
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                    <p>Selected Offer Summary</p>
+                    <div class="productOrderTotal">
+                        <div>
+                            <p>Sub Total:</p>
+                            <p class="productSubTotal">0</p>
+                        </div>
+                        <div>
+                            <p>Tax:</p>
+                            <p class="productTax">₹50</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Final Price:</p>
+                            <p class="productFinalTotal">0</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+    <template id="productCartTemplate">
+        <div class="cards" id="cartValue">
+            <div>
+                <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+                <a href="#">
+                    <img src="" alt="productImage" class="productImage">
+                    <h2 class="productName">${product.name}</h2>
+                </a>
+            </div>
+            <p class="productPrice"></p>
+            <div class="stockElement">
+                <button class="cartDec">-</button>
+                <p class="quantity">1</p>
+                <button class="cartInc">+</button>
+            </div>
+            <button class="add-to-cart-btn remove-to-cart-btn">Remove</button>
+        </div>
+    </template>
+
+    <!------------------------------------- AddToCart Elemrnt section end ------------------------------>
+
+
+
+
+    <!-- //--------------------------------------Start footer section----------------------------------// -->
+    
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content_1">
+        <div class="footer-logo">
+          <a href="index.html">
+            <span>online</span>
+            <span>store</span>
+          </a>
+        </div>
+        <p>
+          Welcome to online store, your ultimate destination for latest and best gadgets.
+        </p>
+        <img src="public/Clipping-Path-Client-Pyment-Method.webp" alt="cards">
+      </div>
+
+      <div class="content_2">
+        <h4>SHOPPING</h4>
+        <a class="footer-links" href="#">Computer Store</a>
+        <a class="footer-links" href="#">Laptop Store</a>
+        <a class="footer-links" href="#">Accessories</a>
+        <a class="footer-links" href="#">Sales & Discount</a>
+      </div>
+
+      <div class="content_3">
+        <h4>Experience</h4>
+        <a class="footer-links" href="./contact.html">Contact Us</a>
+        <a class="footer-links" href="" target="_blank">Payment Method</a>
+        <a class="footer-links" href="" target="_blank">Delivery</a>
+        <a class="footer-links" href="" target="_blank">Return & Exchange</a>
+      </div>
+
+
+      <div class="content_4">
+        <h4>NEWSLETTER</h4>
+        <p>Be first one to know about <br /> new arrivals,sales & promos!</p>
+        <div class="f-mail">
+          <input type="email" placeholder="Your Email" />
+          <i class="bx bx-envelope"></i>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="f-design">
+      <div class="f-design-txt">
+        <p>Design and Code by Shubham and Vedansh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- //--------------------------------------end footer section----------------------------------// -->
+
+  <!-- script -->
+  <script type="module" src="src/main.js"></script>
+
+</body>
+</html>
