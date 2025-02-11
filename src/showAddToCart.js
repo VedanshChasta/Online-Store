@@ -1,6 +1,7 @@
 import products from "../api/products.json";
 import { finalCartValue } from "./finalCartValue";
 import { getCartProductFromsLs } from "./getCartProducts";
+import { showToast } from "./showToast";
 totalPrice();
 let cartProducts = getCartProductFromsLs();
 
@@ -81,6 +82,8 @@ function removeProdFromCart(id){
 
     if(removeDiv) {
         removeDiv.remove();
+        // show toast when product removed to cart
+        showToast("delete",id);
     }
 
     finalCartValue(cartProducts);
@@ -161,16 +164,16 @@ function totalPrice(){
          getPrice = getPrice + Number(currentProd.price);
     });
 
-    subTotal.innerText = getPrice;
+    subTotal.innerText = "₹" + getPrice;
 
-    if (getPrice<=5000) {
-        finalPrice.innerText = Number(getPrice + 50 + 40);
+    if (getPrice<=5000 && getPrice>0) {
+        finalPrice.innerText ="₹" + Number(getPrice + 50 + 40);
     }
     else if (getPrice>5000) {
-        finalPrice.innerText = Number(getPrice+50);
+        finalPrice.innerText = "₹" + Number(getPrice+50);
     }
     else{
-        finalPrice.innerText = 0;
+        finalPrice.innerText = "₹" + 0;
     }
    
 

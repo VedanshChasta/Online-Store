@@ -1056,5 +1056,48 @@ main {
    
 }
 
+/* css for toast notification */
+.toast{
+    position: fixed;
+    top: 2rem;
+    right: 1.4rem;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* border-bottom: 0; */
+    /* border-color: red; */
+    font-size: 0.8rem;
+    z-index: 1000;
+    font-family: "Urbanist";
+    animation: toastAnimation 2s linear; 
+    -webkit-animation: toastAnimation 2s linear;
+    box-shadow:  inset 0px 0px 0.5em 0px #3e3e3e, 0px 0px 0.5em 0px #313030;   
+}
 
-
+@keyframes toastAnimation {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
