@@ -25,106 +25,113 @@
       </div>
     </section>
 
-    
+
     <div class="container">
-        <div class="navbar-logo">
-          <a href="index.html">
-            <span>online</span>
-            <span>store</span>
-          </a>
-        </div>
-  
-        <nav class="navbar">
-          <ul>
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">about</a>
-            </li>
-            <li class="nav-item">
-              <a href="products.html" class="nav-link">products</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">contact</a>
-            </li>
-          </ul>
-  
-          <ul>
-            <div class="cart">
-              <a href="/cart.html" class="nav-link addtocart" id="cartValue">
-                <i class="fa-solid fa-cart-shopping"> 0 </i>
-              </a>
-            </div>
-          </ul>
-        </nav>
+      <div class="navbar-logo">
+        <a href="index.html">
+          <span>online</span>
+          <span>store</span>
+        </a>
       </div>
-    </header>
 
-    <!------------------------------------- AddToCart Elemrnt section start ------------------------------>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">products</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+        </ul>
 
-    <section class="AddToCartElement">
-        <div class="container">
-            <section>
-                <div id="productCartContainer">
-                    
-              
-                </div>
-            </section>
+        <ul>
+          <div class="cart">
+            <a href="/cart.html" class="nav-link addtocart" id="cartValue">
+              <i class="fa-solid fa-cart-shopping"> 0 </i>
+            </a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <section class="productCartTotalElem">
-                <div class="productCartTotalElement">
-                    <p>Selected Offer Summary</p>
-                    <div class="productOrderTotal">
-                        <div>
-                            <p>Sub Total:</p>
-                            <p class="productSubTotal">0</p>
-                        </div>
-                        <div>
-                            <p>Tax:</p>
-                            <p class="productTax">₹50</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <p>Final Price:</p>
-                            <p class="productFinalTotal">0</p>
-                        </div>
-                    </div>
-                </div>
+  <!------------------------------------- AddToCart Elemrnt section start ------------------------------>
 
-            </section>
+  <section class="AddToCartElement">
+    <div class="container">
+      <section>
+        <div id="productCartContainer">
+
+
         </div>
+      </section>
 
-    </section>
-
-    <template id="productCartTemplate">
-        <div class="cards" id="cartValue">
+      <section class="productCartTotalElem">
+        <div class="productCartTotalElement">
+          <p>Selected Offer Summary</p>
+          <div class="productOrderTotal">
             <div>
-                <span class="category"></span>
+              <p>Sub Total:</p>
+              <p class="productSubTotal">0</p>
             </div>
-            <div class="imageContainer">
-                <a href="#">
-                    <img src="" alt="productImage" class="productImage">
-                    <h2 class="productName">${product.name}</h2>
-                </a>
+            <div>
+              <p>Tax:</p>
+              <p class="productTax">₹50</p>
             </div>
-            <p class="productPrice"></p>
-            <div class="stockElement">
-                <button class="cartDec">-</button>
-                <p class="quantity">1</p>
-                <button class="cartInc">+</button>
+            <div>
+              <p>Delivery Fee:</p>
+              <p class="deliveryFee">₹40</p>
             </div>
-            <button class="add-to-cart-btn remove-to-cart-btn">Remove</button>
+            <hr>
+            <div>
+              <p>Final Price:</p>
+              <p class="productFinalTotal">0</p>
+            </div>
+          </div>
         </div>
-    </template>
+      </section>
+    </div>
 
-    <!------------------------------------- AddToCart Elemrnt section end ------------------------------>
+  </section>
+
+  <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+      <div class="first">
+
+          <span class="category"></span>
+
+
+          <a href="#">
+            <img src="" alt="productImage" class="productImage">
+            <h2 class="productName">${product.name}</h2>
+          </a>
+
+      </div>
+      <p class="productPriceCart"></p>
+      <div class="last">
+        <div class="stockElement">
+          <button class="cartDec">-</button>
+          <p class="quantity">1</p>
+          <button class="cartInc">+</button>
+        </div>
+        <button class="remove-to-cart-btn">Remove</button>
+      </div>
+    </div>
+  </template>
+
+  <!------------------------------------- AddToCart Elemrnt section end ------------------------------>
 
 
 
 
-    <!-- //--------------------------------------Start footer section----------------------------------// -->
-    
+  <!-- //--------------------------------------Start footer section----------------------------------// -->
+
   <footer class="section-footer">
     <div class="footer-container container">
       <div class="content_1">
@@ -179,7 +186,8 @@
   <!-- //--------------------------------------end footer section----------------------------------// -->
 
   <!-- script -->
-  <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/showAddToCart.js"></script>
 
 </body>
+
 </html>

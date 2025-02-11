@@ -1,8 +1,5 @@
 const cartValue = document.querySelector("#cartValue");
 
-
-
-
 export const finalCartValue = (cartProducts) =>{
     let totalCartValue = 0; 
     cartProducts.forEach(element => {
